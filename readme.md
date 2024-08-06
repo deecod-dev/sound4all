@@ -32,4 +32,8 @@
 1. **Clone or download the repository**:
 
    ```bash
-   git clone https://github.com/deecod-dev/soundpro
+   git clone https://github.com/deecod-dev/sound4all
+
+
+2. **Follow the local setup steps as mentioned above**:
+   
