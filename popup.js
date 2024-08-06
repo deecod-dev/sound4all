@@ -1,6 +1,7 @@
 let slider = document.getElementById("slider");
 let mutebtn = document.getElementById("no-sound");
 let voltext = document.getElementById("cvol");
+let toggleModeBtn = document.getElementById("toggle-mode");
 
 let isMuted = false;
 let tabId = null;
@@ -65,11 +66,15 @@ mutebtn.addEventListener("click", () => {
             slider.value = 0;
             setvol(0);
           } else {
-            slider.value = response.volume;
-            setvol(response.volume);
+            slider.value = lastvol;
+            setvol(lastvol);
           }
         }
       });
     }
   });
+});
+
+toggleModeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
 });
