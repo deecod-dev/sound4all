@@ -36,4 +36,5 @@
 
 
 2. **Follow the local setup steps as mentioned above**:
-   
+
+3. **WORKS ON ALL WEBSITES**
