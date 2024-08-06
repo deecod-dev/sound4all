@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>popup</title>
+    <title>Volume Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="top_part"></div>
+    <div id="top_part">Volume Manager</div>
     <div id="audio_source">
         <ul id="audio_source_list"></ul>
     </div>
     <div id="cont">
         <a id="cvol">100%</a>
         <input type="range" min="0" max="7" step="0.01" id="slider" value="1">
+        <button id="no-sound">Mute/Unmute</button>
     </div>
     <script src="popup.js"></script>
 </body>
