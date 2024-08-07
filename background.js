@@ -75,6 +75,11 @@ let tabs = {};
  */
 function captureTab(tabId) {
   return new Promise((resolve, reject) => {
+    let f=localStorage.getItem("modeflag")
+    // console.log(f,"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+    if(f===null){
+      localStorage.setItem("modeflag",0)
+    }
     chrome.tabCapture.capture({ audio: true, video: false }, (stream) => {
       if (chrome.runtime.lastError) {
         reject(chrome.runtime.lastError);
