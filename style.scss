@@ -1,124 +1,127 @@
-@charset "UTF-8";
 /* General Styles */
 body {
-  width: 400px;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4; /* Light mode background */
-  color: #333; /* Light mode text color */
-  text-align: center;
+    width: 400px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light mode background */
+    color: #333; /* Light mode text color */
+    text-align: center;
 }
 
 body.dark-mode {
-  background-color: #2c2c2c; /* Dark mode background */
-  color: #f4f4f4; /* Dark mode text color */
+    background-color: #2c2c2c; /* Dark mode background */
+    color: #f4f4f4; /* Dark mode text color */
 }
 
 /* Button Styles */
 button {
-  border: none;
-  border-radius: 5px;
-  box-sizing: border-box;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff; /* Light mode button color */
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Light mode button color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3; /* Light mode button hover color */
+    background-color: #0056b3; /* Light mode button hover color */
 }
 
 body.dark-mode button {
-  background-color: #444; /* Dark mode button color */
+    background-color: #444; /* Dark mode button color */
 }
 
 body.dark-mode button:hover {
-  background-color: #666; /* Dark mode button hover color */
+    background-color: #666; /* Dark mode button hover color */
 }
 
 /* Top Part Styles */
 #top_part {
-  height: 50px;
-  width: 100%;
-  background-color: #007bff; /* Light mode top part color */
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: #007bff; /* Light mode top part color */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
 }
 
 body.dark-mode #top_part {
-  background-color: #444; /* Dark mode top part color */
+    background-color: #444; /* Dark mode top part color */
 }
 
 /* Slider Styles */
 #slider {
-  width: 95%;
-  margin: 20px auto;
-  -webkit-appearance: none;
-  appearance: none;
-  height: 10px;
-  background: #ddd; /* Light mode slider background */
-  border-radius: 5px;
-  outline: none;
-  transition: background 0.3s ease;
+    width: 95%;
+    margin: 20px auto;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: #ddd; /* Light mode slider background */
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease;
 }
 
 body.dark-mode #slider {
-  background: #555; /* Dark mode slider background */
+    background: #555; /* Dark mode slider background */
 }
 
 #slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #007bff; /* Light mode thumb color */
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s ease;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff; /* Light mode thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 body.dark-mode #slider::-webkit-slider-thumb {
-  background: #888; /* Dark mode thumb color */
+    background: #888; /* Dark mode thumb color */
 }
 
 #slider::-webkit-slider-thumb:hover {
-  background: #0056b3; /* Light mode thumb hover color */
+    background: #0056b3; /* Light mode thumb hover color */
 }
 
 body.dark-mode #slider::-webkit-slider-thumb:hover {
-  background: #aaa; /* Dark mode thumb hover color */
+    background: #aaa; /* Dark mode thumb hover color */
 }
 
 /* Volume Text Styles */
 #cvol {
-  font-size: 24px;
-  margin: 20px 0;
-  display: block;
+    font-size: 24px;
+    margin: 20px 0;
+    display: block;
 }
 
 /* Container Styles */
 #cont {
-  width: 90%;
-  margin: 20px auto;
-  padding: 10px;
-  background-color: #fff; /* Light mode container background */
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 20px auto;
+    // margin: 20px 10px 0px 10px;
+    padding: 10px;
+    background-color: #fff; /* Light mode container background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 body.dark-mode #cont {
-  background-color: #333; /* Dark mode container background */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #333; /* Dark mode container background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+
+
 /* Add this to your style.css file */
+
 #toggle-mode {
   display: inline-block;
   padding: 5px 10px;
@@ -143,7 +146,8 @@ body.dark-mode #cont {
   background-color: #555;
 }
 
-/* From Uiverse.io by Galahhad */
+
+/* From Uiverse.io by Galahhad */ 
 .theme-switch {
   --toggle-size: 15px;
   /* the size is adjusted using font-size,
@@ -198,7 +202,7 @@ body.dark-mode #cont {
   inset: 0;
   -webkit-box-shadow: 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset, 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset, 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset;
-  border-radius: var(--container-radius);
+  border-radius: var(--container-radius)
 }
 
 .theme-switch__checkbox {
@@ -313,6 +317,7 @@ body.dark-mode #cont {
 }
 
 /* actions */
+
 .theme-switch__checkbox:checked + .theme-switch__container {
   background-color: var(--container-night-bg);
 }
@@ -322,7 +327,7 @@ body.dark-mode #cont {
 }
 
 .theme-switch__checkbox:checked + .theme-switch__container .theme-switch__circle-container:hover {
-  left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter) - 0.187em);
+  left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter) - 0.187em)
 }
 
 .theme-switch__circle-container:hover {
@@ -346,7 +351,8 @@ body.dark-mode #cont {
   transform: translateY(-50%);
 }
 
-/* From Uiverse.io by vinodjangid07 */
+
+/* From Uiverse.io by vinodjangid07 */ 
 /* The switch - the box around the speaker*/
 .toggleSwitch {
   width: 50px;
@@ -358,7 +364,7 @@ body.dark-mode #cont {
   background-color: rgb(39, 39, 39);
   border-radius: 50%;
   cursor: pointer;
-  transition-duration: 0.3s;
+  transition-duration: .3s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
   overflow: hidden;
 }
@@ -383,7 +389,7 @@ body.dark-mode #cont {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  transition-duration: 0.3s;
+  transition-duration: .3s;
 }
 
 .speaker svg {
@@ -399,21 +405,21 @@ body.dark-mode #cont {
   justify-content: center;
   opacity: 0;
   z-index: 3;
-  transition-duration: 0.3s;
+  transition-duration: .3s;
 }
 
 .mute-speaker svg {
   width: 18px;
 }
 
-#checkboxInput:checked + .toggleSwitch .speaker {
+#checkboxInput:checked +.toggleSwitch .speaker {
   opacity: 0;
-  transition-duration: 0.3s;
+  transition-duration: .3s;
 }
 
-#checkboxInput:checked + .toggleSwitch .mute-speaker {
+#checkboxInput:checked +.toggleSwitch .mute-speaker {
   opacity: 1;
-  transition-duration: 0.3s;
+  transition-duration: .3s;
 }
 
 #checkboxInput:active + .toggleSwitch {
@@ -424,7 +430,7 @@ body.dark-mode #cont {
   background-color: rgb(61, 61, 61);
 }
 
-#features {
+#features{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -432,195 +438,114 @@ body.dark-mode #cont {
   padding: 0px 30px 0px 30px;
 }
 
+
 /* ////////////////////////////////////////////////////////////////// */
+
+$strings: (
+  "By- deecod"
+  "and"
+  "her???"
+);
+
+// now for some timing (in seconds)
+$durCharFwd: 0.10; // character typed
+$durFullGap: 2.00; // time between typed/delete
+$durCharBwd: 0.08; // character deleted
+$durDoneGap: 1.00; // time between strings
+
+// initializing some variables and functions ✊🏼
+$charCount: 0; $durTotal: 0;
+@each $string in $strings {
+  $charCount: $charCount + str-length($string);
+  $durTotal: $durTotal
+    + (str-length($string) * ($durCharFwd + $durCharBwd))
+    + $durFullGap + $durDoneGap;
+}
+@function percent($string, $letter, $modifier) {
+  $stringsPast: $string - 1; $time: 0;
+  @while $stringsPast > 0 {
+    $time: $time
+      + (($durCharFwd + $durCharBwd) * (str-length(nth($strings, $stringsPast))))
+      + $durFullGap + $durDoneGap;
+    $stringsPast: $stringsPast - 1;
+  }
+  @if $letter <= str-length(nth($strings, $string)) {
+    $time: $time
+      + ($durCharFwd * ($letter - 1));
+  } @else {
+    $time: $time
+      + ($durCharFwd * str-length(nth($strings, $string)))
+      + $durFullGap
+      + ($durCharBwd * ($letter - str-length(nth($strings, $string))));
+  }
+  @return ($time / $durTotal * 100 + $modifier) + "%";
+}
+$currentPercentage: 0;
+// now THIS is where the magic happens... ✨
 @keyframes typed {
-  /* string 1, char 1 */
-  0%, 0.8041529791% {
-    content: "B";
-  }
-  /* string 1, char 2 */
-  0.8051529791%, 1.6093059581% {
-    content: "By";
-  }
-  /* string 1, char 3 */
-  1.6103059581%, 2.4144589372% {
-    content: "By-";
-  }
-  /* string 1, char 4 */
-  2.4154589372%, 3.2196119163% {
-    content: "By- ";
-  }
-  /* string 1, char 5 */
-  3.2206119163%, 4.0247648953% {
-    content: "By- d";
-  }
-  /* string 1, char 6 */
-  4.0257648953%, 4.8299178744% {
-    content: "By- de";
-  }
-  /* string 1, char 7 */
-  4.8309178744%, 5.6350708535% {
-    content: "By- dee";
-  }
-  /* string 1, char 8 */
-  5.6360708535%, 6.4402238325% {
-    content: "By- deec";
-  }
-  /* string 1, char 9 */
-  6.4412238325%, 7.2453768116% {
-    content: "By- deeco";
-  }
-  /* string 1, char 10 */
-  7.2463768116%, 24.7977117552% {
-    content: "By- deecod";
-  }
-  /* string 1, char 11 */
-  24.7987117552%, 25.4418341385% {
-    content: "By- deeco";
-  }
-  /* string 1, char 12 */
-  25.4428341385%, 26.0859565217% {
-    content: "By- deec";
-  }
-  /* string 1, char 13 */
-  26.0869565217%, 26.730078905% {
-    content: "By- dee";
-  }
-  /* string 1, char 14 */
-  26.731078905%, 27.3742012882% {
-    content: "By- de";
-  }
-  /* string 1, char 15 */
-  27.3752012882%, 28.0183236715% {
-    content: "By- d";
-  }
-  /* string 1, char 16 */
-  28.0193236715%, 28.6624460548% {
-    content: "By- ";
-  }
-  /* string 1, char 17 */
-  28.6634460548%, 29.306568438% {
-    content: "By-";
-  }
-  /* string 1, char 18 */
-  29.307568438%, 29.9506908213% {
-    content: "By";
-  }
-  /* string 1, char 19 */
-  29.9516908213%, 30.5948132045% {
-    content: "B";
-  }
-  /* string 1, char 20 */
-  30.5958132045%, 38.6463429952% {
-    content: "​";
-  }
-  /* string 2, char 1 */
-  38.6473429952%, 39.4514959742% {
-    content: "a";
-  }
-  /* string 2, char 2 */
-  39.4524959742%, 40.2566489533% {
-    content: "an";
-  }
-  /* string 2, char 3 */
-  40.2576489533%, 57.8089838969% {
-    content: "and";
-  }
-  /* string 2, char 4 */
-  57.8099838969%, 58.4531062802% {
-    content: "an";
-  }
-  /* string 2, char 5 */
-  58.4541062802%, 59.0972286634% {
-    content: "a";
-  }
-  /* string 2, char 6 */
-  59.0982286634%, 67.1487584541% {
-    content: "​";
-  }
-  /* string 3, char 1 */
-  67.1497584541%, 67.9539114332% {
-    content: "h";
-  }
-  /* string 3, char 2 */
-  67.9549114332%, 68.7590644122% {
-    content: "he";
-  }
-  /* string 3, char 3 */
-  68.7600644122%, 69.5642173913% {
-    content: "her";
-  }
-  /* string 3, char 4 */
-  69.5652173913%, 70.3693703704% {
-    content: "her?";
-  }
-  /* string 3, char 5 */
-  70.3703703704%, 71.1745233494% {
-    content: "her??";
-  }
-  /* string 3, char 6 */
-  71.1755233494%, 88.7268582931% {
-    content: "her???";
-  }
-  /* string 3, char 7 */
-  88.7278582931%, 89.3709806763% {
-    content: "her??";
-  }
-  /* string 3, char 8 */
-  89.3719806763%, 90.0151030596% {
-    content: "her?";
-  }
-  /* string 3, char 9 */
-  90.0161030596%, 90.6592254428% {
-    content: "her";
-  }
-  /* string 3, char 10 */
-  90.6602254428%, 91.3033478261% {
-    content: "he";
-  }
-  /* string 3, char 11 */
-  91.3043478261%, 91.9474702093% {
-    content: "h";
-  }
-  /* string 3, char 12 */
-  91.9484702093%, 100% {
-    content: "​";
+  @for $i from 1 through length($strings) {
+    // @for $j from 1 through (str-length(nth($strings, $i)) * 2 - 1) {
+    @for $j from 1 through (str-length(nth($strings, $i)) * 2) {
+      /* string #{$i}, char #{$j} */
+      @if $j < str-length(nth($strings, $i)) * 2 { // not last character deleted
+        #{percent($i, $j, 0)}, #{percent($i, $j+1, -0.001)} {
+          @if $j <= str-length(nth($strings, $i)) {
+            content: quote(#{str_slice(nth($strings, $i), 1, $j)});
+          } @else {
+            content: quote(#{str_slice(nth($strings, $i), 1, str-length(nth($strings, $i)) - ($j - str-length(nth($strings, $i))))});
+          }
+        }
+      } @else {
+        @if $i < length($strings) { // not last string
+          #{percent($i, $j, 0)}, #{percent($i+1, 1, -0.001)} {
+            content: "​"; // zero-width space to retain element height
+          }
+        } @else { // last string
+          #{percent($i, $j, 0)}, 100% {
+            content: "​"; // zero-width space to retain element height
+          }
+        }
+      }
+    }
   }
 }
 @keyframes beam-blink {
-  75% {
-    border-color: transparent;
-  }
+  75% { border-color: transparent; }
 }
+// * { backface-visibility: hidden; }
+// html, body { height: 100%; }
 body {
+  // display: flex;
   align-items: center;
   justify-content: center;
+  // background-color: #000;
+  // background-image: // skeuomorphism anyone?
+  //   radial-gradient(rgba(#fff, 0.125), rgba(#fff, 0)),
+  //   linear-gradient(to bottom, #000, #000 2px, #111 3px);
   background-repeat: repeat-y;
   background-position: center center;
   background-size: cover, 100% 3px;
   font-size: calc(10px + 2vw);
-  font-family: "VT323", monospace, sans-serif;
-  /* color: #3f3; */
+  font-family: 'VT323', monospace, sans-serif;
+  color: #3f3; // hacker green
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-body::after {
-  content: "";
-  position: relative;
-  top: -13px;
-  display: inline-block;
-  padding-right: 3px;
-  padding-right: calc(3px + 0.1vw);
-  border-right: 10px solid rgba(51, 255, 51, 0.75);
-  border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
-  text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
-  white-space: nowrap;
-  animation: typed 12.42s linear 1s infinite, beam-blink 1s infinite;
-}
-@media (max-width: 575px) {
-  body::after {
-    top: -33px;
+  &::after {
+    content: ""; // zero-width space to retain element height
+    position: relative;
+    top: -13px;
+    @media (max-width: 575px) { top: -33px; }
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(#3f3, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(#3f3, 0.75);
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
+    animation: typed #{$durTotal + "s"} linear 1s infinite, beam-blink 1s infinite;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
+// body[onload] {
+//  &::before, &::after { display: none !important; }
+//  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1580009/codepen_css-typed-this.png) center / cover;
+// }
