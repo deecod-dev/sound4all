@@ -12,6 +12,8 @@
 8. there are two js files, popup.js runs only when you click the extension icon and the background.js runs all the time.
 9. background_page shows logs of background.js and when you click the extension inspect it to open the logs of popup.js.
 
+![dark mode](dark.png)
+![light mode](light.png)
 
 # Volume Manager Chrome Extension
 
@@ -26,6 +28,9 @@
 - **Visual Feedback**: Displays the current volume percentage for quick reference.
 - **Simple and Intuitive UI**: Easy-to-use popup interface for adjusting volumes and muting tabs.
 - **Compatibility with All Sites**: Works on youtube very well, regardless of whether they contain audio or video elements, working on more features currently.
+- **Light and Dark mode**: Who likes light mode anyways, use dark mode to suit your taste.
+- **Clean UI/UX**
+
 
 ## Installation
 
