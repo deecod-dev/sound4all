@@ -12,8 +12,9 @@
 8. there are two js files, popup.js runs only when you click the extension icon and the background.js runs all the time.
 9. background_page shows logs of background.js and when you click the extension inspect it to open the logs of popup.js.
 
-![dark mode](dark.png)
-![light mode](light.png)
+<img src="dark.png" width=350 height=300>
+<img src="light.png" width=350 height=300>
+<!-- ctrl shift v for readme preview on vscode -->
 
 # Volume Manager Chrome Extension
 
